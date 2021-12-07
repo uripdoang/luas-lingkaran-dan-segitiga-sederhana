@@ -1,0 +1,80 @@
+<html>
+<html>
+<head>
+	<title>menghitung luas segitiga</title>
+	<script type="text/javascript">
+
+		function luaslingkaran(){
+			ddiameter=document.getElementById("diameter").value;
+			luas=22/7*(ddiameter/2)*(ddiameter/2);
+			document.getElementById("luas").value=luas;
+		}
+		function luass(){
+			aalas=document.getElementById("alas").value;
+			ttinggi=document.getElementById("tinggi").value;
+			luas=(aalas*ttinggi)*1/2;
+			document.getElementById("luas1").value=luas;
+		}
+
+	</script>
+</head>
+<body>
+	
+	<form>
+		<h4>Menghitung luas lingkaran</h4>
+		<table>
+
+			<tr>
+				<td>Diameter lingkaran</td>
+				<td>:</td>
+				<td><input type="text" id="diameter" name="diameter"></td>
+			</tr>
+
+			<tr>
+				<td>Luas</td>
+				<td>:</td>
+				<td><input type="text" id="luas" name="luas" disabled="true" size="5"></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td></td>
+				<td><input type="button" value="hitung" onclick="luaslingkaran();"></td>
+			</tr>
+
+		</table>
+	</form>
+
+	<form>
+		<h4>Menghitung luas segitiga</h4>
+		<table>
+
+			<tr>
+				<td>Alas</td>
+				<td>:</td>
+				<td><input type="text" id="alas" name="alas"></td>
+			</tr>
+
+			<tr>
+				<td>Tinggi</td>
+				<td>:</td>
+				<td><input type="text" id="tinggi" name="tinggi"></td>
+			</tr>
+
+			<tr>
+				<td>Luas</td>
+				<td>:</td>
+				<td><input type="text" id="luas1" name="luas1" disabled="true" size="5"></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td></td>
+				<td><input type="button" value="hitung" onclick="luass();"></td>
+			</tr>
+			
+		</table>
+	</form>	
+
+</body>
+</html>
